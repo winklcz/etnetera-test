@@ -20,6 +20,7 @@ public class JavaScriptFrameworkController {
 
 	private final JavaScriptFrameworkRepository repository;
 
+	@Deprecated
 	@GetMapping("/frameworks")
 	public Iterable<JavaScriptFramework> frameworks() {
 		return repository.findAll();
